@@ -1,28 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import MobCard from "./components/MobCard";
+// import Wrapper from "./components/Wrapper";
+// import Title from "./components/Title";
+import mobpsycho from "./mobpsycho.json";
+
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    state = {
+        mobpsycho
+    };
+
+    MobCard = id => {
+        // Filter this.state.friends for friends with an id not equal to the id being removed
+        const mobpsycho = this.state.mobpsycho.filter(mobpsycho => mobpsycho.id !== id);
+        // Set this.state.friends equal to the new friends array
+        this.setState({ mobpsycho });
+    };
+
+    render() {
+        return (
+            <div>
+            {this.state.mobpsycho.map(mobpsycho => (
+                <MobCard
+                    id={mobpsycho.id}
+                    name={mobpsycho.name}
+                    image={mobpsycho.image}
+                />
+            ))}
+            </div>
+        )
+    }
 }
 
 export default App;
