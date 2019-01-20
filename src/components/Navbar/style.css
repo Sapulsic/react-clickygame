@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Staatliches');
+
+.navBar {
+  min-width: 100%;
+  background: #145C9E;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+#cScore,
+#tScore,
+.mobTitle a {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #DCC7BE;
+}
+
+.mobTitle a {
+  font-size: 5em;
+}

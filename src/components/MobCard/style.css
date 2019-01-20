@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-between;
+  max-width: 45%;
+  /* padding: 25px; */
+  margin: 0 auto;
+}
+
+.card {
+  margin: 0;
+  padding: 2.5%;
+  /* width: 25%; */
+}
+
+.img-container {
+  overflow: hidden;
+  transition: transform .2s; /* Animation */
+  
+}
+
+.img-container img {
+  /* background: #145C9E; */
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 auto;
+  width: 140px;
+  height: auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+.img-container:hover {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

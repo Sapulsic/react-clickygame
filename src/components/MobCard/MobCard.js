@@ -1,5 +1,5 @@
 import React from "react";
-// import "./style.css";
+import "./style.css";
 
 function MobCard(props) {
     return (
@@ -8,11 +8,11 @@ function MobCard(props) {
                 <img alt={props.name} src={props.image} />
             </div>
             <div className="content">
-                <ul>
+                {/* <ul>
                     <li>
                         <strong>Name:</strong> {props.name}
                     </li>
-                </ul>
+                </ul> */}
             </div>
         </div>
     );

@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #DCC7BE;
+  margin: 0 0 25px 0;
+  font-family: 'Bungee Shade', cursive;
+}
