@@ -4,4 +4,7 @@
 
 ![screenshot](public/assets/images/MobPsyClick.jpg)
 
-#### Test
+
+## Technologies Used
+
+#### React
